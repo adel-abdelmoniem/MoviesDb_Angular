@@ -14,12 +14,12 @@ import { TvshowComponent } from './tvshow/tvshow.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
-  {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
-  {path:'movies',component:MoviesComponent,canActivate:[AuthGuardService]},
-  {path:'tvshow',component:TvshowComponent,canActivate:[AuthGuardService]},
-  {path:'people',component:PeopleComponent,canActivate:[AuthGuardService]},
-  {path:'details/:mediaType/:id',component:DetailsComponent,canActivate:[AuthGuardService]},
-  {path:'actor/person/:id',component:ActordetailsComponent,canActivate:[AuthGuardService]},
+  {path:'home',component:HomeComponent},
+  {path:'movies',component:MoviesComponent},
+  {path:'tvshow',component:TvshowComponent},
+  {path:'people',component:PeopleComponent},
+  {path:'details/:mediaType/:id',component:DetailsComponent},
+  {path:'actor/person/:id',component:ActordetailsComponent},
   {path:'network',component:NetworkComponent},
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
